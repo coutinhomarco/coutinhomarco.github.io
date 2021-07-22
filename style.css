@@ -1,0 +1,21 @@
+.centralizado{
+        text-align: center;
+}
+body{
+    background-color: #E8EDDF;
+    padding: 0;
+}
+
+.heading{
+    color: #333533;
+    font-family: sans-serif;
+}
+.descricao{
+    font-family:serif ;
+    font-size: 18px;
+}
+.heading-portifolio{
+    background-color: #C2AFF0;
+    padding: 30px;
+    margin: 0%;
+}
