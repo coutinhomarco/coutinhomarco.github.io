@@ -9,13 +9,19 @@ body{
 }
 
 .heading{
-    color: #333533;
+    color: #242423; 
     font-family: sans-serif;
     font-weight: 600;
 }
+.sub-heading{
+    color: #242423; 
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.05em;
+}
 .descricao{
     font-family:serif ;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 .heading-portifolio{
