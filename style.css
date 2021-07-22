@@ -18,20 +18,27 @@ body{
     font-family: sans-serif;
     font-weight: 600;
     font-size: 1.05em;
+    text-decoration: underline;
 }
 .descricao{
     font-family:serif ;
     font-size: 16px;
     text-align: center;
+    background-color:#D5D7D5;
+    padding: 30px;
 }
 .heading-portifolio{
-    background-color: #C2AFF0;
+    background-color: #C1C3C1;
     padding: 40px;
     margin: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    margin-top: -1%;
 }
 .heading-descricao{
     text-align: center;
+    background-color: #D5D7D5;
+    margin-bottom: -16px;
+    margin-top: 2%;
 }
 img {
     display: block;
