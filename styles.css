@@ -62,16 +62,14 @@ body{
     left: 32%;
 }
 /* .skills-container{
-    background-color: #A3A8B8;
+    background-color: #757C95;
     z-index: 0;
     position: absolute;
     padding: 10% 20%;
     top: 17%;
     left: 25%;
     display: block;
-    
-
-
+    color: blanchedalmond;
 } */
 .skills{
     padding: 15%;
@@ -94,7 +92,7 @@ body{
     max-width: 30%;
     position: absolute;
     left: 30%;
-    top: 43%;
+    top: 40.4%;
     font-size: 17px;
     font-weight: 700;
 }
@@ -118,11 +116,45 @@ body{
 }
 .portfolio{
     background-color: #555B6E;
-    padding: 50%;
+    padding: 40%;
+    padding-bottom: 20%;
     text-align: center;
     /* position: absolute; */
 
 }
 .hardskills ul{
     margin-top: 30px;
+}
+ul :nth-of-type(2n+1){
+    font-style: italic ;
+
+}
+.python{
+    background-color: #89B0AE;
+    color: #505568;
+    padding: 10%;
+    text-align: center;
+}
+.python h3{
+    padding-bottom: 30px;
+    font-size: 1.6em;
+}
+/* body ul :hover{
+    background-color: red;
+} */
+.python ul{
+    padding: 0px;
+}
+button :active{
+    font-style: italic;
+}
+button{
+    background-color: #828782;
+    height: 30px ;
+    width: 75px;
+    font-size: 18px;
+    transition: 1.5s ;
+}
+button :hover{
+    background-color: #C1C3C1;
 }
