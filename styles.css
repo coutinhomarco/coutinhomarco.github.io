@@ -4,20 +4,23 @@
 }
 .heading-topo{
     background-color:#555B6E ;
-    padding:15px ;
+    padding:12px ;
     position: absolute;
-    top: 0%;
+    top: 4%;
     left: 45%;
-
-
+    z-index: 0;
 }
 .social-media{
     background-color:#555B6E ;
     padding:15px ;
-    float: right;
-    padding-left: 100%;
-    padding-right: 10%;
+    /* float: right; */
+    z-index:1 ;
+    /* padding-left: 100%;
+    padding-right: 10%; */
     max-width: 10%;
+    position: absolute;
+    right: 6%;
+    top: 6%;
     
 }
 body{
@@ -51,7 +54,8 @@ body{
     position: relative;
     margin-bottom: 3%;
     left: 35%;
-    font-size: 1.4em;
+    font-size: 1.5em;
+    text-decoration: underline;
     
 }
 .heading-skills{
