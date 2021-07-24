@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.heading-topo{
+    background-color:#427AA1 ;
+    padding:15px ;
+    position: absolute;
+    top: 0%;
+    left: 45%;
+
+
+}
+.social-media{
+    background-color:#427AA1 ;
+    padding:15px ;
+    float: right;
+    padding-left: 100%;
+    padding-right: 10%;
+    max-width: 10%;
+    
+}
+body{
+    font-family: Montserrat;
+}
+.photo{
+    background-color: white;
+    position: absolute;
+    top: 250px;
+    border-radius: 100%;
+    left: 5%;
+    padding: 15px ;
+    /* padding-right: 200px; */
+    background-color: #242423;
+    margin-left: 5%;
+    
+}
+.photo-container{
+    padding-right: 60%;
+    padding-bottom: 40%;
+    background-color: #E3E9D8;
+
+}
+.description{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    max-width: 45%;
+}
+.heading-description{
+    position: relative;
+    margin-bottom: 3%;
+    left: 35%;
+    font-size: 1.4em;
+    
+}
+button{
+    background-color: #C1C3C1;
+    display: inline;
+    color: #242423;
+}
+button :hover{
+    background-color: #ACAFAC ;
+}

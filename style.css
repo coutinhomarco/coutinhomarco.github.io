@@ -12,6 +12,7 @@ body{
 }
 .redes-sociais{
     float:left;
+    max-width: 200px;
     
 }
 .redes-sociais-img{
