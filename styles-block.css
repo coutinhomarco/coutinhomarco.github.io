@@ -3,17 +3,19 @@
 }
 img{
     width: 250px;
-    margin-left: 100px;
+    margin-left: 20px;
     margin-top: 150px;
     border-radius: 50%;
     padding:15px;
     background-color: #FFD6BA;
     clear: both;
+    margin-right: 100px;
 }
 .photo-container{
     padding-right: 0px;
     max-width: 250px;
     margin-right: 0px;
+    margin-left: 10px;
     display: inline-block;
 }
 body{
@@ -24,8 +26,10 @@ body{
 .header{
     background-color: #555B6E;
     color: #D0DABE;
-    padding: 4%;
+    padding: 3%;
     padding-top: 2%;
+    max-height: 10%;
+    padding-bottom: 1%;
 }
 .heading-topo{
     text-align: center;
@@ -40,11 +44,12 @@ body{
     text-align: center;
 }
 .description{
-    display: inline-block ;
     max-width: 55%;
-    padding-left:600px ;
-    
+    position: relative;
+    right: -700px;
+    top: -200px;
 }
+
 .heading-description{
     text-align: center;
     padding-bottom: 30px;
@@ -92,7 +97,7 @@ body{
 }
 .portfolio{
     background-color: #505468;
-    padding: 15%;
+    padding-bottom: 15%;
     color:#D0DABE ;
     padding-top: 5%;
 }
@@ -122,7 +127,7 @@ body{
     text-align: center;
     color: #505568;
     padding-bottom: 5%;
-    padding-bottom: 13%;
+    padding-bottom: 10%;
 }
 .python ul{
     display: block;
@@ -145,16 +150,26 @@ button{
 button:hover{
     background-color: #FFD6BA;
 }
+button :link{
+    font-style: normal;
+    text-decoration: none;
+}
 ul :nth-of-type(2n+1){
     font-style: italic;
 }
 .portfolio ol li{
-    max-width: 30%;
+    max-width: 80%;
+    
+}
+.portfolio ol{
+    max-width: 80%;
+    
 }
 .fundamentos-container{
     display: inline-block;
     width: 350px;
-    margin-left: 8%;
+    margin-left:22% ;
+
 }
 .frontend-container{
     display: inline-block;
@@ -165,10 +180,34 @@ ul :nth-of-type(2n+1){
 .backend-container{
     display: inline-block;
     width: 350px;
-    margin: auto;
+    margin-right:20%;
 }
 footer{
     background-color: #505568;
     padding: 2%;
     margin-top: 0%;
+    font-size: 0.5em;
+}
+nav{
+    margin-right: 5px;
+    float: left;
+    background-color: #828782;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+nav :link{
+    color: #D0DABE;
+    font-style: normal;
+    text-decoration: none;
+    
+
+}
+nav li :hover{
+    background-color:#FFD6BA ;
+}
+nav h1{
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 5px;
 }
