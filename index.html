@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<div id = "head">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css" type = "text/css">
+        <link rel="stylesheet" href="styles-block.css" type = "text/css">
         <title>Portfólio | Marco</title>
     </head>
-</div>
 <body>
     <div class="header">
         <div class="heading-topo">
@@ -19,7 +17,7 @@
         <div class="social-media">
             <h3>Minhas redes</h3>
             <br>
-            <button class="button" > 
+            <button> 
                 <a target="_blank"
                 href="https://www.linkedin.com/in/coutinhomarco/"> Linkedin</a>
             </button>
@@ -31,7 +29,8 @@
         </div>
         <div class="photo-container">
             <img class = "photo" width="250" src="./profile.jpeg" alt="Selfie do meu rosto.">
-            <div class="description">
+        </div>
+        <div class="description">
                 <h2 class="heading-description">Descrição</h2>
                 <p class="bloco" > Sou<em> brasileiro, natural de Belo Horizonte, Minas Gerais </em>. 
                 Tenho 20 anos e atualmente estudo <strong> <em> Física na UFMG e Desenvolvimento Web na Trybe</em> </strong>. Sempre fui apaixonado por tecnologia e, 
@@ -39,12 +38,10 @@
                 Por isso decidi que iria trabalhar na área e, 
                 juntando meus conhecimentos obtidos pela Física Computacional e o Desenvolvimento Web espero me tornar um profissional melhor  <br>
                 </p>
-            </div>
         </div>
+        
     </div>
-    
     <div class="skills">
-        <div class="skills-container">
             <h2 class=heading-skills >
                 Algumas das minhas habilidades
                 </h2>
@@ -55,37 +52,52 @@
                     <li>Resiliência</li>
                     <br>
                     <li>Brio</li>
+                    <br>
+                    <li>Trabalho em equipe</li>
                 </ul>
         </div>
     
-    <div class="hardskills">
-        <h3 class="heading-hardskills">Hardskills</h3>
-        <br>
-        <ul>
-            <li><em><a href="#python">Python - contexto físico</a></em></li>
-            <br>
-            <li> <strong> <a href="https://github.com/coutinhomarco/trybe-exercicios"> HTML</a></strong></li>
-            <br>
-            <li>JavaScript</li>
-            <br>
-            <li>CSS</li>
-            <br>
-        </ul>
-    </div>
-    </div>
+            <div class="hardskills">
+                <h3 class="heading-hardskills">Hardskills</h3>
+                    <br>
+                    <ul>
+                        <li><em><a href="#python">Python - contexto físico</a></em></li>
+                        <br>
+                        <li> <strong> <a href="https://github.com/coutinhomarco/trybe-exercicios"> HTML</a></strong></li>
+                        <br>
+                        <li>JavaScript</li>
+                        <br>
+                        <li>CSS</li>
+                        <br>
+                        </ul>
+                </div>
     </div>
     <div class="portfolio">
         <h2 class="heading-portfolio">Portfólio</h2>
-        <ul>
-            <li>Fundamentos de Desenvolvimento Web</li>
-            <li>Front-end</li>
-            <li>Back-end</li>
-        </ul>
-         
-
-
-
+        
+            <div class="fundamentos-container">
+                <h3>Fundamentos</h3>
+                <ol>
+                    <li>primeiro</li> 
+                    <li>segundo</li> 
+                </ol>
+            </div>
+            <div class="frontend-container">
+                    <h3>Front-end</h3>
+                    <ol>
+                        <li>primeiro</li> 
+                        <li>segundo</li> 
+                    </ol>
+            </div>
+            <div class="backend-container">
+                    <h3>Back-end</h3>
+                    <ol>
+                        <li>primeiro</li> 
+                        <li>segundo</li> 
+                    </ol>
+            </div>          
     </div>
+
     <div class="python">
     <h3 class="heading-python" >
         Python
@@ -99,6 +111,8 @@
     <li class = "python"> <a href="https://github.com/coutinhomarco/sorting-algorithms"> Trabalho sobre algoritmos de ordenação.</a></li>
     </ul>
     </div>
-    <br>
 </body>
+<footer>
+    <h3>Todos direitos reservados à <a target="_blank" href="https://www.linkedin.com/in/coutinhomarco/"> Marco</a></h3>
+</footer>
 </html>
