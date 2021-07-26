@@ -2,10 +2,12 @@
     margin: 0px;
 }
 img{
-    width: 200px;
+    width: 250px;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 150px;
     border-radius: 50%;
+    padding:15px;
+    background-color: #FFD6BA;
 }
 .photo-container{
     padding-right: 0px;
@@ -19,15 +21,96 @@ body{
 .header{
     background-color: #555B6E;
     color: #D0DABE;
+    padding: 4%;
+    padding-top: 2%;
 }
 .heading-topo{
     text-align: center;
-    /* font-size: 1.2em; */
-    
-
+    text-decoration: underline;
 }
 .social-media{
-    display: inline-block;
     float: right;
     margin-right: 40px;
+}
+.description{
+    display: inline-block ;
+    max-width: 45%;
+    padding-left:500px ;
+    
+}
+.heading-description{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.skills{
+    background-color: #FFD6BA;
+    padding-bottom: 20%;
+    padding-top: 5%;
+    color: #505568;
+}
+.heading-skills{
+    text-align: center;
+    clear: both;
+    margin-bottom: 3%;
+    font-size: 1.7em;
+
+}
+.softskills{
+    max-width: 300px;
+    margin-left: 25%;
+    float: left;
+}
+.hardskills{
+    max-width: 280px;
+    margin-left:50% ;
+    margin-right: 25%;
+    float: right;
+}
+.skills h3{
+    font-size: 1.3em;
+}
+
+.portfolio{
+    background-color: #505468;
+    padding: 10%;
+    color:#D0DABE ;
+    padding-top: 5%;
+}
+.heading-portfolio{
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 1.7em;
+}
+.portfolio ul{
+    max-width: 40%;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+.heading-python{
+    padding-bottom: 3%;
+}
+.python{
+    background-color: #FFD6BA;
+    padding: 5%;
+    text-align: center;
+    color: #505568;
+}
+.pyton ul{
+    display: block;
+    margin: auto;
+    max-width: 10%;
+}
+.python li{
+    padding: 20px;
+}
+.python h3{
+    font-size: 1.7em;
+}
+button{
+    padding:5px 15px ;
+    background-color: #828782;
+    font-family: Montserrat;
+    font-size: 17px;
 }
