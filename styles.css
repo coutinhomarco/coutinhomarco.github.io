@@ -139,9 +139,6 @@ ul :nth-of-type(2n+1){
     padding-bottom: 30px;
     font-size: 1.6em;
 }
-/* body ul :hover{
-    background-color: red;
-} */
 .python ul{
     padding: 0px;
 }
@@ -152,9 +149,17 @@ button{
     background-color: #828782;
     height: 30px ;
     width: 75px;
-    font-size: 18px;
+    font-size: 15px;
     transition: 1.5s ;
+    font-family: Montserrat;
+    color:white;
+    border: 1px solid transparent;
+    border-radius: 7%;
 }
 button :hover{
     background-color: #C1C3C1;
+
+}
+button :link{
+    text-decoration: none;
 }

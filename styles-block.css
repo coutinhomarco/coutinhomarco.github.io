@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+}
+img{
+    width: 250px;
+    margin-left: 100px;
+    margin-top: 150px;
+    border-radius: 50%;
+    padding:15px;
+    background-color: #FFD6BA;
+}
+.photo-container{
+    padding-right: 0px;
+    max-width: 250px;
+    margin-right: 0px;
+    display: inline-block;
+}
+body{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+}
+.header{
+    background-color: #555B6E;
+    color: #D0DABE;
+    padding: 4%;
+    padding-top: 2%;
+}
+.heading-topo{
+    text-align: center;
+    text-decoration: underline;
+
+}
+.social-media{
+    float: right;
+    margin-right: 40px;
+}
+.description{
+    display: inline-block ;
+    max-width: 45%;
+    padding-left:500px ;
+}
+.heading-description{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.7em;
+}
+.skills{
+    background-color: #FFD6BA;
+    padding-bottom: 20%;
+    padding-top: 5%;
+    color: #505568;
+}
+.heading-skills{
+    text-align: center;
+    clear: both;
+    margin-bottom: 5%;
+    font-size: 1.7em;
+
+}
+.heading-softskills{
+    text-align: center;
+}
+.heading-hardskills{
+    text-align: center;
+}
+.softskills{
+    max-width: 30%;
+    margin-left: 30%;
+    float: left;
+}
+.hardskills{
+    max-width: 280px;
+    margin-left:62% ;
+    margin-right: 25%;
+    clear: right;
+}
+.skills h3{
+    font-size: 1.3em;
+}
+
+
+.heading-portfolio{
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 1.7em;
+}
+.portfolio{
+    background-color: #505468;
+    padding: 15%;
+    color:#D0DABE ;
+    padding-top: 5%;
+}
+.portfolio h3{
+    max-width: 30%;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+}
+.portfolio ol{
+    max-width: 40%;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+.heading-python{
+    padding-bottom: 3%;
+}
+.python{
+    background-color: #FFD6BA;
+    padding: 5%;
+    text-align: center;
+    color: #505568;
+}
+.python ul{
+    display: block;
+    margin: auto;
+    max-width: 25%;
+}
+.python li{
+    padding: 20px;
+}
+.python h3{
+    font-size: 1.7em;
+}
+button{
+    padding:5px 15px ;
+    background-color: #828782;
+    font-family: Montserrat;
+    font-size: 17px;
+    transition: 1s;
+}
+button:hover{
+    background-color: #FFD6BA;
+}
+ul :nth-of-type(2n+1){
+    font-style: italic;
+}
