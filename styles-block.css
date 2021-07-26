@@ -3,16 +3,19 @@
 }
 img{
     width: 250px;
-    margin-left: 100px;
+    margin-left: 20px;
     margin-top: 150px;
     border-radius: 50%;
     padding:15px;
     background-color: #FFD6BA;
+    clear: both;
+    margin-right: 100px;
 }
 .photo-container{
     padding-right: 0px;
     max-width: 250px;
     margin-right: 0px;
+    margin-left: 10px;
     display: inline-block;
 }
 body{
@@ -23,8 +26,10 @@ body{
 .header{
     background-color: #555B6E;
     color: #D0DABE;
-    padding: 4%;
+    padding: 3%;
     padding-top: 2%;
+    max-height: 10%;
+    padding-bottom: 1%;
 }
 .heading-topo{
     text-align: center;
@@ -35,11 +40,16 @@ body{
     float: right;
     margin-right: 40px;
 }
-.description{
-    display: inline-block ;
-    max-width: 45%;
-    padding-left:500px ;
+.social-media h3{
+    text-align: center;
 }
+.description{
+    max-width: 55%;
+    position: relative;
+    right: -700px;
+    top: -200px;
+}
+
 .heading-description{
     text-align: center;
     padding-bottom: 30px;
@@ -47,7 +57,7 @@ body{
 }
 .skills{
     background-color: #FFD6BA;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     padding-top: 5%;
     color: #505568;
 }
@@ -82,22 +92,24 @@ body{
 
 .heading-portfolio{
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     font-size: 1.7em;
 }
 .portfolio{
     background-color: #505468;
-    padding: 15%;
+    padding-bottom: 15%;
     color:#D0DABE ;
     padding-top: 5%;
 }
 .portfolio h3{
-    max-width: 30%;
-    width: 30%;
+    max-width: 100%;
+    width: 315px;
     display: inline-block;
     text-align: center;
-    vertical-align: top;
-
+    vertical-align: text-top;
+    /* margin-left: 3%;
+    margin-right: 3%; */
+    padding-bottom: 8%;
 }
 .portfolio ol{
     max-width: 40%;
@@ -114,6 +126,8 @@ body{
     padding: 5%;
     text-align: center;
     color: #505568;
+    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 .python ul{
     display: block;
@@ -136,6 +150,64 @@ button{
 button:hover{
     background-color: #FFD6BA;
 }
+button :link{
+    font-style: normal;
+    text-decoration: none;
+}
 ul :nth-of-type(2n+1){
     font-style: italic;
+}
+.portfolio ol li{
+    max-width: 80%;
+    
+}
+.portfolio ol{
+    max-width: 80%;
+    
+}
+.fundamentos-container{
+    display: inline-block;
+    width: 350px;
+    margin-left:22% ;
+
+}
+.frontend-container{
+    display: inline-block;
+    width: 350px;
+    margin: auto;
+
+}
+.backend-container{
+    display: inline-block;
+    width: 350px;
+    margin-right:20%;
+}
+footer{
+    background-color: #505568;
+    padding: 2%;
+    margin-top: 0%;
+    font-size: 0.5em;
+}
+nav{
+    margin-right: 5px;
+    float: left;
+    background-color: #828782;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+nav :link{
+    color: #D0DABE;
+    font-style: normal;
+    text-decoration: none;
+    
+
+}
+nav li :hover{
+    background-color:#FFD6BA ;
+}
+nav h1{
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 5px;
 }
