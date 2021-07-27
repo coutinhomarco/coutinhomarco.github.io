@@ -44,7 +44,7 @@ body{
     text-align: center;
 }
 .description{
-    max-width: 55%;
+    max-width: 48%;
     position: relative;
     right: -700px;
     top: -200px;
@@ -107,8 +107,6 @@ body{
     display: inline-block;
     text-align: center;
     vertical-align: text-top;
-    /* margin-left: 3%;
-    margin-right: 3%; */
     padding-bottom: 8%;
 }
 .portfolio ol{
