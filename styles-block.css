@@ -148,11 +148,17 @@ button{
     transition: 1s;
 }
 button:hover{
-    background-color: #FFD6BA;
+    /* background-color: #FFD6BA; */
+    background-color: #A1A5A1;
+    color: red;
 }
 button :link{
     font-style: normal;
     text-decoration: none;
+    color: #D0DABE;
+}
+button :visited{
+    color: #D0DABE;
 }
 ul :nth-of-type(2n+1){
     font-style: italic;
@@ -203,11 +209,27 @@ nav :link{
     
 
 }
+nav :visited{
+    color: #D0DABE;
+}
+/* nav ol li{
+    width: 90px;
+} */
 nav li :hover{
-    background-color:#FFD6BA ;
+    background-color:#A1A5A1 ;
 }
 nav h1{
     font-size: 1em;
     text-align: center;
     padding-bottom: 5px;
+}
+.trybe{
+    color: #2fc18c;
+}
+.trybe :link{
+    text-decoration: none;
+    color:#2fc18c ;
+}
+.trybe :visited{
+    color: #2fc18c;
 }
