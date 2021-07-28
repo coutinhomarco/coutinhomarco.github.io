@@ -78,7 +78,6 @@ body{
     max-width: 30%;
     margin-left: 27%;
     float: left;
-    left: -%;
 }
 .hardskills{
     max-width: 280px;
@@ -183,7 +182,7 @@ ul :nth-of-type(2n+1){
 .frontend-container{
     display: inline-block;
     width: 16%;
-    margin: auto:
+    margin: auto;
 }
 .backend-container{
     display: inline-block;
@@ -232,4 +231,8 @@ nav h1{
 }
 .trybe :visited{
     color: #2fc18c;
+}
+.portfolio li :link{
+    text-decoration: none;
+    color: #D0DABE;
 }
