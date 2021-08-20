@@ -236,3 +236,8 @@ nav h1{
     text-decoration: none;
     color: #D0DABE;
 }
+
+.fundamentos-container li {
+    margin: 5px;
+
+}
