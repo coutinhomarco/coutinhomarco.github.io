@@ -11,7 +11,7 @@ const toast = document.querySelector("#toast");
 const currentYear = document.querySelector("#ano-atual");
 let toastTimer;
 
-// Centraliza todos os textos traduzíveis para alternar o idioma sem duplicar HTML.
+// Textos usados na troca de idioma.
 const translations = {
   pt: {
     pageTitle: "Portfólio Pessoal | Currículo Online",
@@ -76,22 +76,22 @@ const translations = {
     experienceIntro:
       "Atuação em engenharia de software, produtos de IA, desenvolvimento backend, frontend e plataformas web.",
     experience1Date: "Outubro de 2025 - presente",
-    experience1Role: "Senior Software Engineer, Backend / Applied AI Engineer",
+    experience1Role: "Engenheiro de Software Sênior, Backend / IA Aplicada",
     experience1Company: "Datagrid AI, atualmente parte da Procore",
     experience1Text:
       "Trabalho no time Applied AI Core Agent, com foco em infraestrutura backend, qualidade de execução, confiabilidade, fluxos de tool calling, parsing, evals e comportamento de agentes de IA.",
     experience2Date: "Junho de 2024 - outubro de 2025",
-    experience2Role: "Software Engineer, Backend-heavy Full Stack / AI Platform",
+    experience2Role: "Engenheiro de Software, Full Stack com foco em Backend / Plataforma de IA",
     experience2Company: "Adapta",
     experience2Text:
       "Atuei na Adapta ONE, plataforma multi-LLM com RAG para clientes corporativos. Ajudei a escalar a base de clientes, integrar modelos de IA e otimizar custos operacionais.",
     experience3Date: "Fevereiro de 2023 - junho de 2024",
-    experience3Role: "Frontend Developer",
+    experience3Role: "Desenvolvedor Frontend",
     experience3Company: "The Brooklyn Brothers",
     experience3Text:
       "Trabalhei em suporte técnico, desenvolvimento e migração de sites para marcas globais da Unilever, usando AEM, React, Vue, Sanity e Netlify em rotinas com comunicação em inglês.",
     experience4Date: "Julho de 2021 - fevereiro de 2023",
-    experience4Role: "Fullstack Engineer",
+    experience4Role: "Engenheiro Full Stack",
     experience4Company: "Growth2data",
     experience4Text:
       "Desenvolvi e mantive aplicações web full stack com React, Node.js, SQL Server, MySQL, Azure, AWS, Cloudflare, Nginx e infraestrutura em nuvem.",
@@ -285,7 +285,7 @@ function text(key) {
   return translations[currentLanguage][key];
 }
 
-// Aplica o idioma escolhido nos textos, atributos acessíveis, título e meta description.
+// Atualiza textos e atributos quando o idioma muda.
 function applyLanguage(language) {
   currentLanguage = language;
   localStorage.setItem("idioma", language);
@@ -317,7 +317,6 @@ function applyLanguage(language) {
 }
 
 function updateThemeButton() {
-  // Mantém o rótulo e o ícone sincronizados com o tema ativo.
   const isDark = body.classList.contains("dark-theme");
   document.querySelector(".theme-label").textContent = isDark
     ? text("themeLight")
@@ -334,7 +333,6 @@ if (savedTheme === "escuro") {
   body.classList.add("dark-theme");
 }
 
-// Abre e fecha a navegação mobile atualizando atributos de acessibilidade.
 menuToggle.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
@@ -342,7 +340,6 @@ menuToggle.addEventListener("click", () => {
 });
 
 navItems.forEach((link) => {
-  // Fecha o menu depois do clique para liberar a tela no celular.
   link.addEventListener("click", () => {
     navLinks.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
@@ -351,7 +348,6 @@ navItems.forEach((link) => {
 });
 
 themeToggle.addEventListener("click", () => {
-  // Salva a preferência para manter o tema escolhido em visitas futuras.
   body.classList.toggle("dark-theme");
   const theme = body.classList.contains("dark-theme") ? "escuro" : "claro";
   localStorage.setItem("tema", theme);
@@ -394,7 +390,6 @@ function clearErrors() {
 }
 
 function showToast(message) {
-  // Reaproveita o mesmo toast e reinicia o temporizador a cada envio válido.
   toast.textContent = message;
   toast.classList.add("show");
 
@@ -408,7 +403,7 @@ function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-// Valida o formulário no navegador e simula sucesso sem enviar dados para servidor.
+// Valida o formulário sem enviar dados para servidor.
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
   clearErrors();

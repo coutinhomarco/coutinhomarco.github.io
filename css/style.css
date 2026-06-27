@@ -1,5 +1,4 @@
 :root {
-  /* Variáveis do tema claro usadas em todo o layout. */
   --bg: #f7f8fb;
   --surface: #ffffff;
   --surface-strong: #eef4f2;
@@ -15,7 +14,6 @@
 }
 
 body.dark-theme {
-  /* As mesmas variáveis são sobrescritas quando o tema escuro está ativo. */
   --bg: #151918;
   --surface: #202725;
   --surface-strong: #273330;
@@ -57,7 +55,6 @@ textarea {
 }
 
 .site-header {
-  /* Mantém a navegação visível enquanto o usuário rola a página. */
   position: sticky;
   top: 0;
   z-index: 10;
@@ -552,7 +549,6 @@ textarea:focus {
 }
 
 @media (max-width: 860px) {
-  /* Em telas menores a navegação vira menu suspenso. */
   .navbar {
     position: relative;
   }
@@ -599,7 +595,6 @@ textarea:focus {
 }
 
 @media (max-width: 560px) {
-  /* Ajustes finais para evitar aperto visual em celulares estreitos. */
   .navbar,
   .section-content {
     width: min(100% - 24px, 1120px);
