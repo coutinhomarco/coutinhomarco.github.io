@@ -1,6 +1,12 @@
+const body = document.body;
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-link");
+const themeToggle = document.querySelector(".theme-toggle");
 const languageToggle = document.querySelector(".language-toggle");
+const themeIcon = document.querySelector(".theme-icon");
+const sections = document.querySelectorAll("main section[id]");
 const currentYear = document.querySelector("#ano-atual");
-
 const translations = {
   pt: {
     pageTitle: "Portfólio Pessoal | Currículo Online",
@@ -299,10 +305,72 @@ function applyLanguage(language) {
   document.querySelectorAll("[data-i18n-content]").forEach((element) => {
     element.setAttribute("content", text(element.dataset.i18nContent));
   });
+
+  updateThemeButton();
 }
+
+function updateThemeButton() {
+  const isDark = body.classList.contains("dark-theme");
+  document.querySelector(".theme-label").textContent = isDark
+    ? text("themeLight")
+    : text("themeDark");
+  themeIcon.textContent = isDark ? "☀" : "☾";
+  themeToggle.setAttribute(
+    "aria-label",
+    isDark ? text("themeLightAria") : text("themeDarkAria")
+  );
+}
+
+const savedTheme = localStorage.getItem("tema");
+if (savedTheme === "escuro") {
+  body.classList.add("dark-theme");
+}
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? text("menuClose") : text("menuOpen"));
+});
+
+navItems.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", text("menuOpen"));
+  });
+});
+
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+  const theme = body.classList.contains("dark-theme") ? "escuro" : "claro";
+  localStorage.setItem("tema", theme);
+  updateThemeButton();
+});
 
 languageToggle.addEventListener("click", () => {
   applyLanguage(currentLanguage === "pt" ? "en" : "pt");
 });
+
+// Destaca no menu a seção que está visível durante a navegação.
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      navItems.forEach((link) => {
+        link.classList.toggle(
+          "active",
+          link.getAttribute("href") === `#${entry.target.id}`
+        );
+      });
+    });
+  },
+  { rootMargin: "-45% 0px -45% 0px" }
+);
+
+sections.forEach((section) => sectionObserver.observe(section));
+
 
 applyLanguage(currentLanguage);

@@ -18,6 +18,19 @@
           <span class="brand-text" data-i18n="brandText">Marco Coutinho</span>
         </a>
 
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          data-i18n-aria-label="menuOpen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <ul class="nav-links" id="menu-principal">
           <li><a class="nav-link active" href="#sobre" data-i18n="navAbout">Sobre mim</a></li>
           <li><a class="nav-link" href="#formacao" data-i18n="navEducation">Formação</a></li>
@@ -36,6 +49,14 @@
             <span data-i18n="languageToggle">EN</span>
           </button>
 
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Alternar para tema escuro"
+          >
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span class="theme-label">Escuro</span>
+          </button>
         </div>
       </nav>
     </header>

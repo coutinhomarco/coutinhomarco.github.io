@@ -13,6 +13,19 @@
   --header-height: 72px;
 }
 
+body.dark-theme {
+  --bg: #151918;
+  --surface: #202725;
+  --surface-strong: #273330;
+  --text: #eef5f3;
+  --muted: #b9c4c1;
+  --primary: #2dd4bf;
+  --primary-dark: #14b8a6;
+  --accent: #fbbf24;
+  --border: #38433f;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -48,6 +61,10 @@ textarea {
   background: rgba(247, 248, 251, 0.92);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(14px);
+}
+
+.dark-theme .site-header {
+  background: rgba(21, 25, 24, 0.92);
 }
 
 .navbar {
@@ -102,12 +119,42 @@ textarea {
   gap: 8px;
 }
 
-.social-link,
 .theme-toggle,
 .language-toggle,
+.menu-toggle {
+  min-width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.theme-toggle {
+  grid-template-columns: auto auto;
+  gap: 6px;
+  padding: 0 12px;
+  font-weight: 800;
+}
+
 .language-toggle {
   padding: 0 12px;
   font-weight: 800;
+}
+
+.menu-toggle {
+  width: 42px;
+  display: none;
+  gap: 4px;
+}
+
+.menu-toggle span {
+  width: 18px;
+  height: 2px;
+  background: currentColor;
 }
 
 .section {
@@ -160,6 +207,10 @@ h1 {
 
 h1 span {
   color: var(--primary-dark);
+}
+
+.dark-theme h1 span {
+  color: var(--primary);
 }
 
 h2 {
@@ -354,6 +405,10 @@ h3 {
   font-weight: 800;
 }
 
+.dark-theme .project-card a {
+  color: var(--primary);
+}
+
 .project-tag {
   width: fit-content;
   max-width: 100%;
@@ -428,7 +483,48 @@ textarea:focus {
     position: relative;
   }
 
-  @media (max-width: 560px) {
+  .menu-toggle {
+    display: grid;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(var(--header-height) - 1px);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-top: 0;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+  }
+
+  .hero-grid,
+  .contact-grid,
+  .experience-card,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+}
+
+@media (max-width: 560px) {
   .navbar,
   .section-content {
     width: min(100% - 24px, 1120px);
@@ -436,6 +532,15 @@ textarea:focus {
 
   .brand-text {
     display: none;
+  }
+
+  .theme-label {
+    display: none;
+  }
+
+  .theme-toggle {
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 
   .hero-actions {
