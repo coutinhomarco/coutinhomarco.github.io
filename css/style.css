@@ -171,6 +171,9 @@ textarea {
 .menu-toggle {
   width: 42px;
   display: none;
+  grid-template-rows: repeat(3, 2px);
+  align-content: center;
+  justify-items: center;
   gap: 4px;
 }
 
