@@ -83,6 +83,17 @@ textarea {
   font-weight: 700;
 }
 
+.brand-photo {
+  width: 42px;
+  height: 42px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--surface);
+  border-radius: var(--radius);
+  box-shadow: 0 0 0 1px var(--border);
+}
+
 .brand-text {
   font-size: 1rem;
 }
@@ -119,6 +130,7 @@ textarea {
   gap: 8px;
 }
 
+.social-link,
 .theme-toggle,
 .language-toggle,
 .menu-toggle {
@@ -131,6 +143,17 @@ textarea {
   color: var(--text);
   background: var(--surface);
   cursor: pointer;
+}
+
+.social-link {
+  width: 42px;
+  padding: 0;
+}
+
+.social-link svg {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 .theme-toggle {
@@ -284,6 +307,18 @@ h3 {
 
 .profile-panel {
   padding: 28px;
+}
+
+.profile-avatar {
+  width: 108px;
+  height: 108px;
+  display: block;
+  margin-bottom: 22px;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid var(--surface);
+  border-radius: var(--radius);
+  box-shadow: 0 0 0 1px var(--border), 0 14px 30px rgba(24, 38, 45, 0.18);
 }
 
 .profile-panel h2 {
