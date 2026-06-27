@@ -505,6 +505,37 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.18);
 }
 
+.error-message {
+  min-height: 20px;
+  display: block;
+  margin-top: 5px;
+  color: #b42318;
+  font-weight: 700;
+}
+
+.toast {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 20;
+  max-width: min(360px, calc(100% - 48px));
+  padding: 14px 18px;
+  color: #ffffff;
+  background: var(--primary-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-weight: 800;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(16px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .site-footer {
   padding: 28px 16px;
   color: var(--muted);
@@ -591,5 +622,11 @@ textarea:focus {
   .experience-card,
   .contact-form {
     padding: 20px;
+  }
+
+  .toast {
+    right: 12px;
+    bottom: 12px;
+    max-width: calc(100% - 24px);
   }
 }

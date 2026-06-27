@@ -6,7 +6,11 @@ const themeToggle = document.querySelector(".theme-toggle");
 const languageToggle = document.querySelector(".language-toggle");
 const themeIcon = document.querySelector(".theme-icon");
 const sections = document.querySelectorAll("main section[id]");
+const contactForm = document.querySelector("#form-contato");
+const toast = document.querySelector("#toast");
 const currentYear = document.querySelector("#ano-atual");
+let toastTimer;
+
 const translations = {
   pt: {
     pageTitle: "Portfólio Pessoal | Currículo Online",
@@ -306,6 +310,7 @@ function applyLanguage(language) {
     element.setAttribute("content", text(element.dataset.i18nContent));
   });
 
+  clearErrors();
   updateThemeButton();
 }
 
@@ -372,5 +377,63 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((section) => sectionObserver.observe(section));
 
+function setError(fieldId, message) {
+  document.querySelector(`#erro-${fieldId}`).textContent = message;
+}
+
+function clearErrors() {
+  setError("nome", "");
+  setError("email", "");
+  setError("mensagem", "");
+}
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3200);
+}
+
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  clearErrors();
+
+  const name = contactForm.nome.value.trim();
+  const email = contactForm.email.value.trim();
+  const message = contactForm.mensagem.value.trim();
+  let hasError = false;
+
+  if (!name) {
+    setError("nome", text("errorName"));
+    hasError = true;
+  }
+
+  if (!email) {
+    setError("email", text("errorEmailRequired"));
+    hasError = true;
+  } else if (!isValidEmail(email)) {
+    setError("email", text("errorEmailInvalid"));
+    hasError = true;
+  }
+
+  if (!message) {
+    setError("mensagem", text("errorMessage"));
+    hasError = true;
+  }
+
+  if (hasError) {
+    return;
+  }
+
+  contactForm.reset();
+  showToast(text("successMessage"));
+});
 
 applyLanguage(currentLanguage);
