@@ -45,7 +45,7 @@ const translations = {
     profilePhotoAlt: "Foto de Marco Soares Coutinho",
     profileName: "Marco Soares Coutinho",
     profileSummary:
-      "Senior Software Engineer | Backend, AI Agents & LLM Systems | Applied AI Engineer.",
+      "Engenheiro de Software Sênior | Backend, agentes de IA e sistemas com LLMs | IA aplicada.",
     profileInterests:
       "<strong>Interesses:</strong> IA aplicada, agentes de IA, backend, arquitetura de software e sistemas distribuídos.",
     profileHobbies:
