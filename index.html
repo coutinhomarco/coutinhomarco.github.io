@@ -6,26 +6,37 @@
     <meta
       name="description"
       content="Portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro."
-     
+      data-i18n-content="metaDescription"
     />
     <title>Portfólio Pessoal | Currículo Online</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <nav class="navbar" aria-label="Navegação principal">
-        <a class="brand" href="#sobre" aria-label="Ir para o início">
-          <span class="brand-text">Marco Coutinho</span>
+      <nav class="navbar" aria-label="Navegação principal" data-i18n-aria-label="navAria">
+        <a class="brand" href="#sobre" aria-label="Ir para o início" data-i18n-aria-label="brandAria">
+          <span class="brand-text" data-i18n="brandText">Marco Coutinho</span>
         </a>
 
         <ul class="nav-links" id="menu-principal">
-          <li><a class="nav-link active" href="#sobre">Sobre mim</a></li>
-          <li><a class="nav-link" href="#formacao">Formação</a></li>
-          <li><a class="nav-link" href="#experiencia">Experiência</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfólio</a></li>
-          <li><a class="nav-link" href="#contato">Contato</a></li>
+          <li><a class="nav-link active" href="#sobre" data-i18n="navAbout">Sobre mim</a></li>
+          <li><a class="nav-link" href="#formacao" data-i18n="navEducation">Formação</a></li>
+          <li><a class="nav-link" href="#experiencia" data-i18n="navExperience">Experiência</a></li>
+          <li><a class="nav-link" href="#portfolio" data-i18n="navPortfolio">Portfólio</a></li>
+          <li><a class="nav-link" href="#contato" data-i18n="navContact">Contato</a></li>
         </ul>
 
+        <div class="header-actions" aria-label="Preferências" data-i18n-aria-label="preferencesAria">
+          <button
+            class="language-toggle"
+            type="button"
+            aria-label="Switch to English"
+            data-i18n-aria-label="languageToggleAria"
+          >
+            <span data-i18n="languageToggle">EN</span>
+          </button>
+
+        </div>
       </nav>
     </header>
 
@@ -33,9 +44,9 @@
       <section class="hero section" id="sobre">
         <div class="section-content hero-grid">
           <div class="hero-text">
-            <p class="eyebrow">Currículo online</p>
-            <h1>Olá, eu sou Marco Soares Coutinho.</h1>
-            <p class="hero-description">
+            <p class="eyebrow" data-i18n="heroEyebrow">Currículo online</p>
+            <h1 data-i18n-html="heroTitle">Olá, eu sou <span>Marco Soares Coutinho</span>.</h1>
+            <p class="hero-description" data-i18n="heroDescription">
               Comecei minha trajetória cursando Física, onde tive contato com
               programação e descobri um interesse real por criar soluções com
               código. Essa experiência me levou a migrar para a área de tecnologia,
@@ -43,19 +54,19 @@
               produtos cloud-native.
             </p>
 
-            <div class="hero-actions" aria-label="Ações principais">
-              <a class="button primary" href="#portfolio">Ver projetos</a>
-              <a class="button secondary" href="#contato">Entrar em contato</a>
+            <div class="hero-actions" aria-label="Ações principais" data-i18n-aria-label="heroActionsAria">
+              <a class="button primary" href="#portfolio" data-i18n="heroProjects">Ver projetos</a>
+              <a class="button secondary" href="#contato" data-i18n="heroContact">Entrar em contato</a>
             </div>
           </div>
 
-          <aside class="profile-panel" aria-label="Resumo pessoal">
-            <h2>Marco Soares Coutinho</h2>
-            <p>Belo Horizonte, Minas Gerais, Brasil.</p>
+          <aside class="profile-panel" aria-label="Resumo pessoal" data-i18n-aria-label="profileAria">
+            <h2 data-i18n="profileName">Marco Soares Coutinho</h2>
+            <p data-i18n="profileSummary">Belo Horizonte, Minas Gerais, Brasil.</p>
             <ul class="quick-facts">
-              <li><strong>Interesses:</strong> IA aplicada, backend e arquitetura de software.</li>
-              <li><strong>Hobbies:</strong> projetos pessoais, estudos de sistemas e tecnologia.</li>
-              <li><strong>Objetivo:</strong> construir sistemas confiáveis com IA, automação e impacto real.</li>
+              <li data-i18n-html="profileInterests"><strong>Interesses:</strong> IA aplicada, backend e arquitetura de software.</li>
+              <li data-i18n-html="profileHobbies"><strong>Hobbies:</strong> projetos pessoais, estudos de sistemas e tecnologia.</li>
+              <li data-i18n-html="profileGoal"><strong>Objetivo:</strong> construir sistemas confiáveis com IA, automação e impacto real.</li>
             </ul>
           </aside>
         </div>
@@ -64,9 +75,9 @@
       <section class="section" id="formacao">
         <div class="section-content">
           <div class="section-heading">
-            <p class="eyebrow">Trajetória</p>
-            <h2>Formação</h2>
-            <p>
+            <p class="eyebrow" data-i18n="educationEyebrow">Trajetória</p>
+            <h2 data-i18n="educationTitle">Formação</h2>
+            <p data-i18n="educationIntro">
               Minha formação combina engenharia de software, física, desenvolvimento
               web full stack e experiência prática com produtos digitais.
             </p>
@@ -74,37 +85,37 @@
 
           <div class="timeline">
             <article class="timeline-item">
-              <span class="timeline-date">2025</span>
-              <h3>Engenharia de Software</h3>
-              <p>
+              <span class="timeline-date" data-i18n="educationDate1">2025</span>
+              <h3 data-i18n="educationItem1Title">Engenharia de Software</h3>
+              <p data-i18n="educationItem1Text">
                 Bacharelado no Centro Universitário Internacional UNINTER.
               </p>
             </article>
 
             <article class="timeline-item">
-              <span class="timeline-date">2020 - 2024</span>
-              <h3>Física</h3>
-              <p>
+              <span class="timeline-date" data-i18n="educationDate2">2020 - 2024</span>
+              <h3 data-i18n="educationItem2Title">Física</h3>
+              <p data-i18n="educationItem2Text">
                 Bacharelado pela Universidade Federal de Minas Gerais, com base
                 forte em raciocínio analítico e resolução de problemas.
               </p>
             </article>
 
             <article class="timeline-item">
-              <span class="timeline-date">2021 - 2022</span>
-              <h3>Desenvolvimento Web Full Stack</h3>
-              <p>Formação em desenvolvimento web pela Trybe.</p>
+              <span class="timeline-date" data-i18n="languagesDate">2021 - 2022</span>
+              <h3 data-i18n="languagesTitle">Desenvolvimento Web Full Stack</h3>
+              <p data-i18n="languagesText">Formação em desenvolvimento web pela Trybe.</p>
             </article>
 
             <article class="timeline-item">
-              <span class="timeline-date">Idiomas</span>
-              <h3>Inglês</h3>
-              <p>Proficiência bilíngue.</p>
+              <span class="timeline-date" data-i18n="languageDate">Idiomas</span>
+              <h3 data-i18n="languageTitle">Inglês</h3>
+              <p data-i18n="languageText">Proficiência bilíngue.</p>
             </article>
           </div>
 
           <div class="skills">
-            <h3>Tecnologias estudadas</h3>
+            <h3 data-i18n="skillsTitle">Tecnologias estudadas</h3>
             <ul class="skill-list">
               <li>HTML5</li>
               <li>CSS3</li>
@@ -126,9 +137,9 @@
       <section class="section alternate" id="experiencia">
         <div class="section-content">
           <div class="section-heading">
-            <p class="eyebrow">Experiência profissional</p>
-            <h2>Experiência</h2>
-            <p>
+            <p class="eyebrow" data-i18n="experienceEyebrow">Experiência profissional</p>
+            <h2 data-i18n="experienceTitle">Experiência</h2>
+            <p data-i18n="experienceIntro">
               Atuação em engenharia de software, produtos de IA, desenvolvimento
               backend, frontend e plataformas web.
             </p>
@@ -137,11 +148,11 @@
           <div class="experience-list">
             <article class="experience-card">
               <div>
-                <span class="timeline-date">Outubro de 2025 - presente</span>
-                <h3>Senior Software Engineer, Backend / Applied AI Engineer</h3>
-                <p class="company">Datagrid AI, atualmente parte da Procore</p>
+                <span class="timeline-date" data-i18n="experience1Date">Outubro de 2025 - presente</span>
+                <h3 data-i18n="experience1Role">Senior Software Engineer, Backend / Applied AI Engineer</h3>
+                <p class="company" data-i18n="experience1Company">Datagrid AI, atualmente parte da Procore</p>
               </div>
-              <p>
+              <p data-i18n="experience1Text">
                 Trabalho no time Applied AI Core Agent, com foco em infraestrutura
                 backend, qualidade de execução, confiabilidade, fluxos de tool
                 calling, parsing, evals e comportamento de agentes de IA.
@@ -150,11 +161,11 @@
 
             <article class="experience-card">
               <div>
-                <span class="timeline-date">Junho de 2024 - outubro de 2025</span>
-                <h3>Software Engineer, Backend-heavy Full Stack / AI Platform</h3>
-                <p class="company">Adapta</p>
+                <span class="timeline-date" data-i18n="experience2Date">Junho de 2024 - outubro de 2025</span>
+                <h3 data-i18n="experience2Role">Software Engineer, Backend-heavy Full Stack / AI Platform</h3>
+                <p class="company" data-i18n="experience2Company">Adapta</p>
               </div>
-              <p>
+              <p data-i18n="experience2Text">
                 Atuei na Adapta ONE, plataforma multi-LLM com RAG para clientes
                 corporativos. Ajudei a escalar a base de clientes, integrar modelos
                 de IA e otimizar custos operacionais.
@@ -163,11 +174,11 @@
 
             <article class="experience-card">
               <div>
-                <span class="timeline-date">Fevereiro de 2023 - junho de 2024</span>
-                <h3>Frontend Developer</h3>
-                <p class="company">The Brooklyn Brothers</p>
+                <span class="timeline-date" data-i18n="experience3Date">Fevereiro de 2023 - junho de 2024</span>
+                <h3 data-i18n="experience3Role">Frontend Developer</h3>
+                <p class="company" data-i18n="experience3Company">The Brooklyn Brothers</p>
               </div>
-              <p>
+              <p data-i18n="experience3Text">
                 Trabalhei em suporte técnico, desenvolvimento e migração de sites
                 para marcas globais da Unilever, usando AEM, React, Vue, Sanity e
                 Netlify em rotinas com comunicação em inglês.
@@ -176,11 +187,11 @@
 
             <article class="experience-card">
               <div>
-                <span class="timeline-date">Julho de 2021 - fevereiro de 2023</span>
-                <h3>Fullstack Engineer</h3>
-                <p class="company">Growth2data</p>
+                <span class="timeline-date" data-i18n="experience4Date">Julho de 2021 - fevereiro de 2023</span>
+                <h3 data-i18n="experience4Role">Fullstack Engineer</h3>
+                <p class="company" data-i18n="experience4Company">Growth2data</p>
               </div>
-              <p>
+              <p data-i18n="experience4Text">
                 Desenvolvi e mantive aplicações web full stack com React, Node.js,
                 SQL Server, MySQL, Azure, AWS, Cloudflare, Nginx e infraestrutura
                 em nuvem.
@@ -193,9 +204,9 @@
       <section class="section" id="portfolio">
         <div class="section-content">
           <div class="section-heading">
-            <p class="eyebrow">Trabalhos</p>
-            <h2>Portfólio</h2>
-            <p>
+            <p class="eyebrow" data-i18n="portfolioEyebrow">Trabalhos</p>
+            <h2 data-i18n="portfolioTitle">Portfólio</h2>
+            <p data-i18n="portfolioIntro">
               Projetos pessoais e acadêmicos publicados no GitHub, com foco em
               Rust, IA, algoritmos e análise de dados.
             </p>
@@ -203,58 +214,58 @@
 
           <div class="project-grid">
             <article class="project-card">
-              <div class="project-tag">Rust • Segurança</div>
-              <h3>Port Scan Detection Firewall</h3>
-              <p>
+              <div class="project-tag" data-i18n="project1Tag">Rust • Segurança</div>
+              <h3 data-i18n="project1Title">Port Scan Detection Firewall</h3>
+              <p data-i18n="project1Text">
                 Firewall inteligente em Rust para detecção de port scanning.
               </p>
-              <a href="https://github.com/coutinhomarco/intelligent-firewall" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Port Scan Detection Firewall">Ver projeto</a>
+              <a href="https://github.com/coutinhomarco/intelligent-firewall" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Port Scan Detection Firewall" data-i18n="projectLink" data-i18n-aria-label="project1Aria">Ver projeto</a>
             </article>
 
             <article class="project-card">
               <div class="project-tag">Rust</div>
-              <h3>Game of Life</h3>
-              <p>
+              <h3 data-i18n="project2Title">Game of Life</h3>
+              <p data-i18n="project2Text">
                 Implementação simples do Game of Life em Rust.
               </p>
-              <a href="https://github.com/coutinhomarco/game-of-life" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Game of Life">Ver projeto</a>
+              <a href="https://github.com/coutinhomarco/game-of-life" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Game of Life" data-i18n="projectLink" data-i18n-aria-label="project2Aria">Ver projeto</a>
             </article>
 
             <article class="project-card">
-              <div class="project-tag">Rust • IA</div>
-              <h3>LLM Sheet Analysis</h3>
-              <p>
+              <div class="project-tag" data-i18n="project3Tag">Rust • IA</div>
+              <h3 data-i18n="project3Title">LLM Sheet Analysis</h3>
+              <p data-i18n="project3Text">
                 Microserviço em Rust para extrair dados de planilhas e enviar
                 informações para um agente de IA.
               </p>
-              <a href="https://github.com/coutinhomarco/llm-sheet-analysis" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto LLM Sheet Analysis">Ver projeto</a>
+              <a href="https://github.com/coutinhomarco/llm-sheet-analysis" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto LLM Sheet Analysis" data-i18n="projectLink" data-i18n-aria-label="project3Aria">Ver projeto</a>
             </article>
 
             <article class="project-card">
-              <div class="project-tag">Grafos • Dados</div>
-              <h3>BH Nível</h3>
-              <p>
+              <div class="project-tag" data-i18n="project4Tag">Grafos • Dados</div>
+              <h3 data-i18n="project4Title">BH Nível</h3>
+              <p data-i18n="project4Text">
                 Projeto para encontrar caminhos com menor elevação em Belo Horizonte.
               </p>
-              <a href="https://github.com/coutinhomarco/bh-nivel" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto BH Nível">Ver projeto</a>
+              <a href="https://github.com/coutinhomarco/bh-nivel" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto BH Nível" data-i18n="projectLink" data-i18n-aria-label="project4Aria">Ver projeto</a>
             </article>
 
             <article class="project-card">
-              <div class="project-tag">IA</div>
-              <h3>Text Summarizer GPT</h3>
-              <p>
+              <div class="project-tag" data-i18n="project5Tag">IA</div>
+              <h3 data-i18n="project5Title">Text Summarizer GPT</h3>
+              <p data-i18n="project5Text">
                 Aplicação criada para resumir textos usando inteligência artificial.
               </p>
-              <a href="https://github.com/coutinhomarco/text-summarizer-gpt" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Text Summarizer GPT">Ver projeto</a>
+              <a href="https://github.com/coutinhomarco/text-summarizer-gpt" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Text Summarizer GPT" data-i18n="projectLink" data-i18n-aria-label="project5Aria">Ver projeto</a>
             </article>
 
             <article class="project-card">
-              <div class="project-tag">Acadêmico</div>
-              <h3>Sorting Algorithms</h3>
-              <p>
+              <div class="project-tag" data-i18n="project6Tag">Acadêmico</div>
+              <h3 data-i18n="project6Title">Sorting Algorithms</h3>
+              <p data-i18n="project6Text">
                 Trabalho acadêmico de Física sobre algoritmos de ordenação.
               </p>
-              <a href="https://github.com/coutinhomarco/sorting-algorithms" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Sorting Algorithms">Ver projeto</a>
+              <a href="https://github.com/coutinhomarco/sorting-algorithms" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Sorting Algorithms" data-i18n="projectLink" data-i18n-aria-label="project6Aria">Ver projeto</a>
             </article>
           </div>
         </div>
@@ -263,33 +274,33 @@
       <section class="section" id="contato">
         <div class="section-content contact-grid">
           <div class="section-heading">
-            <p class="eyebrow">Mensagem</p>
-            <h2>Contato</h2>
-            <p>
+            <p class="eyebrow" data-i18n="contactEyebrow">Mensagem</p>
+            <h2 data-i18n="contactTitle">Contato</h2>
+            <p data-i18n="contactIntro">
               Preencha o formulário abaixo para simular o envio de uma mensagem.
             </p>
             <address class="contact-info">
-              <a href="mailto:marquinco@outlook.com">marquinco@outlook.com</a>
+              <a href="mailto:marquinco@outlook.com" data-i18n="contactEmail">marquinco@outlook.com</a>
             </address>
           </div>
 
           <form class="contact-form" id="form-contato">
             <div class="form-group">
-              <label for="nome">Nome</label>
+              <label for="nome" data-i18n="formName">Nome</label>
               <input type="text" id="nome" name="nome" autocomplete="name" />
             </div>
 
             <div class="form-group">
-              <label for="email">E-mail</label>
+              <label for="email" data-i18n="formEmail">E-mail</label>
               <input type="email" id="email" name="email" autocomplete="email" />
             </div>
 
             <div class="form-group">
-              <label for="mensagem">Mensagem</label>
+              <label for="mensagem" data-i18n="formMessage">Mensagem</label>
               <textarea id="mensagem" name="mensagem" rows="6"></textarea>
             </div>
 
-            <button class="button primary full-width" type="submit">
+            <button class="button primary full-width" type="submit" data-i18n="formSubmit">
               Enviar mensagem
             </button>
           </form>
@@ -299,9 +310,11 @@
 
     <footer class="site-footer">
       <p>
-        &copy; 2026
-        <span>Marco Soares Coutinho. Desenvolvido com HTML, CSS e JavaScript puro.</span>
+        &copy; <span id="ano-atual"></span>
+        <span data-i18n="footerText">Marco Soares Coutinho. Desenvolvido com HTML, CSS e JavaScript puro.</span>
       </p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

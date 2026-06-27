@@ -102,6 +102,14 @@ textarea {
   gap: 8px;
 }
 
+.social-link,
+.theme-toggle,
+.language-toggle,
+.language-toggle {
+  padding: 0 12px;
+  font-weight: 800;
+}
+
 .section {
   padding: 88px 0;
 }
